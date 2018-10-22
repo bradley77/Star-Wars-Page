@@ -1,14 +1,14 @@
 body {
+	background-image: url(star-night.jpg);
 	background-color: black;
-
 }
 .main{
-	text-align: center; 
+	text-align: center;
 	display: center;
 }
 .banner{
 	width: 100%;
-	display: block;	
+	display: block;
 	img.center;
 	background-color: black;
 	margin: auto;
@@ -20,10 +20,10 @@ body {
 	margin: auto;
 }
 .nav{
-	background-color: red;
-	color: #FFFFFF;
+	background: linear-gradient(to bottom, transparent, 10%, #2719C7, #990000, 90%, transparent);
 	list-style: none;
 	text-align: center;
+	overflow: hidden;
 	padding: 20px 0 20px 0;
 }
 .nav > li{
@@ -32,14 +32,18 @@ body {
 }
 .nav > li > a{
 	text-decoration: none;
+	font-size: 18px;
 	color: #fff;
 }
 .nav > li > a:hover {
 	color: black;
 }
 .sidebar-left{
-	background: red;
-	width: 200px;
+	background: linear-gradient(to right, transparent, 10%, #2719C7, 90%, transparent);
+	border-top: 18px #2719C7;
+	border-top-right-radius:200px;
+	border-top-left-radius: 200px;
+	width: 175px;
 	height: 100%;
 	display: block;
 	position: absolute;
@@ -53,15 +57,24 @@ ul{
 ul li{
 	list-style: none;
 }
-ul > li > a {
+ul > li > a1 {
 	color: white;
 	display: block;
 	font-size: 18px;
 	list-style: none;
+	text-align: center;
+	height: 30px;
+	margin-top: 30px;
+}
+ul > li > a1:hover {
+	color: black;
 }
 .sidebar-right {
-	background: red;
-	width: 200px;
+	background: linear-gradient(to right, transparent, 10%, #990000, 90%, transparent);
+	border-top: 18px #990000;
+	border-top-right-radius:200px;
+	border-top-left-radius: 200px;
+	width: 175px;
 	height: 100%;
 	display: block;
 	position: absolute;
@@ -71,12 +84,33 @@ ul > li > a {
 .main-image{
 	margin: auto;
 	width: 50%;
-	border: 3px solid black;
 	padding: 50x;
-
-	
 }
 .main-image > characters {
 	width: 100%;
-	
+}
+
+.left-lightsaber{
+	position: absolute;
+	left: -11px;
+	display: block;
+}
+.saber{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+		display: block;
+		width: 220px;
+}
+.right-lightsaber{
+	position: absolute;
+	right: -11px;
+	display: block;
+}
+.saberr{
+    position: absolute;
+    bottom:0px;
+    right:0px;
+		display: block;
+		width: 220px;
 }
